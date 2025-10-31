@@ -139,6 +139,11 @@ main h1{
     background-color: var(--background-bottom);
 }
 
+figure{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
 .dev-resources{
     display: flex;
     flex-direction: column;
