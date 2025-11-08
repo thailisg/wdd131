@@ -1,9 +1,19 @@
-@media screen and (min-width: 500px) {
-    header {
-    background-color: #000000;
-    color: #ffffff;
+@media screen and (max-width: 600px) {
+    header span {
+        font-size: 1.3rem;
     }
-    main {
-        grid-template-columns: 1fr 1fr;
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-img {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    main img {
+        max-width: 150px;
     }
 }

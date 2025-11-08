@@ -1,0 +1,51 @@
+@media screen and (min-width: 800px) {
+
+    /*------------Header------------*/
+
+    #menu-toggle {
+        display: none;
+    }
+
+    header span {
+        font-size: 1.5rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        padding: 10px;
+        height: 2vh;
+    }
+
+    .navigation a {
+        padding: 0 1vh;
+        height: 100%;
+    }
+
+    /*-------------Main-------------*/
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .container-img {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .container-img figure {
+        width: 100%;
+        max-width: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    main img {
+        width: 150px;
+        height: auto;
+    }
+}
