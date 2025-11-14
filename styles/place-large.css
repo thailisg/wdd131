@@ -1,0 +1,58 @@
+@media screen and (min-width: 800px) {
+
+    :root {
+        --greek-blue: #0D5EAF;
+        --santorini-water: #4CC9F0;
+        --white: #ffffff;
+        --light-gray: #f7f7f7;
+        --dark-text: #333333;
+    }
+
+    main {
+        max-width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        position: relative;
+        background-image: url("../images/hero-large.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 90vh;
+    
+    }
+
+    picture {
+        display: none;
+    }
+
+    section {
+        width: 260px;
+        background: rgba(255, 255, 255, 0.85);
+        border: 1px solid var(--santorini-water);
+        padding: 1rem;
+        border-radius: 10px;
+        backdrop-filter: blur(3px);
+        position: absolute;
+    }
+
+    .data {
+        top: 2rem;
+        left: 2rem;
+    }
+
+     .weather {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+}
+

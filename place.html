@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thailis Gonzalez">
+    <meta name="description" content="data of Greece and its climate, a place that Thailis wants to visit">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131 - Country Page - Thailis Gonzalez</title>
+</head>
+<body>
+    <header>
+        <h1>Santorini</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+            <img src="images/hero-small.webp" 
+                alt="Santorini, Greece"
+                width="1600" height="900">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Location:</strong> Cyclades, Aegean Sea, Greece</li>
+                <li><strong>Area:</strong> 90.69 km²</li>
+                <li><strong>Population:</strong> ~15,000 residents</li>
+                <li><strong>Capital:</strong> Fira</li>
+                <li><strong>Languages:</strong> Greek (official)</li>
+                <li><strong>Currency:</strong> Euro (€)</li>
+                <li><strong>Time Zone:</strong> UTC+2 (UTC+3 in summer)</li>
+                <li><strong>Calling Code:</strong> +30</li>
+                <li><strong>Internet TLD:</strong> .gr</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather <span class="large-icon"></span></h2>
+
+            <img class="weather-icon-mobile" src="images/partly-cloudy.svg" alt="Partly Cloudy">
+            <p><strong>Temperature:</strong> <span id="temp">10</span> °C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear"></span> 🎮 Thailis Gonzalez 🎮 Chile
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
