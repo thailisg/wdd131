@@ -1,0 +1,130 @@
+:root {
+    --background-principal: #2E1A47;
+    --background-card: #6A4C93;
+    --background-nav: #4B2E68;
+    --hover: #B497FF;
+    --text-principal: #FFFFFF;
+    --secundary-text: #E0D4FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-principal);
+}
+
+header, footer {
+    background-color: var(--background-card);
+    text-align: center;
+    padding: 2rem 0 0 0;
+    width: 100%;
+}
+
+/*---------------Header---------------*/
+
+header span {
+    display: block;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: var(--text-principal);
+    font-size: 2rem;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--background-nav);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.navigation.active {
+  display: flex;
+}
+
+.navigation li{
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-principal);
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.navigation a:hover {
+    background-color: var(--hover);
+    transform: scale(1.05);
+}
+
+/*--------------main------------*/
+
+main {
+    max-width: 100%;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: var(--secundary-text);
+}
+
+.container-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    text-align: center;
+}
+
+.container-img figure {
+    width: 90%;
+    max-width: 320px;
+    background-color: var(--background-card);
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.container-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.container-img figcaption {
+    color: var(--secundary-text);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/*---------------footer------------*/
+
+footer p {
+    color: var(--text-principal);
+    padding: 1rem 0;
+}
