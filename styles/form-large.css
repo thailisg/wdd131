@@ -1,0 +1,15 @@
+@media (min-width: 800px) {
+    label {
+        font-size: 1.1rem;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 1.05rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

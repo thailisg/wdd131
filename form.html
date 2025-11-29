@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thailis Gonzalez">
+    <meta name="description" content="WDD 131 - Form activity from Thailis Gonzalez">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <title>WDD 131 - Form activity from Thailis Gonzalez</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+    <div class="container-form">   
+    <form method="get" action="review.html" class="form1">
+
+        <fieldset>
+
+            <label for="product-name">Product Name</label>
+
+            <select name="product-name" id="product-name" required>
+                <option value="" disabled selected>Choose a product</option>
+
+            </select>
+
+            <label>Overall Rating</label>
+            <div class="stars">
+	            
+                <label class="star-option">
+                    &star;
+                    <input type="radio" name="rating" value="1" required>  
+                </label>
+
+                <label class="star-option">
+                    &star;&star;
+                    <input type="radio" name="rating" value="2" required>    
+                </label>
+
+                <label class="star-option">
+                    &star;&star;&star;
+                    <input type="radio" name="rating" value="3" required>
+                </label>
+
+                <label class="star-option">
+                    &star;&star;&star;&star;
+                    <input type="radio" name="rating" value="4" required>
+                </label>
+
+                <label class="star-option">
+                    &star;&star;&star;&star;&star;
+                    <input type="radio" name="rating" value="5" required>
+                </label>
+
+            </div>
+            
+
+            <label for="date">Date of Installation</label>
+            <input type="date" name="date" id="date" required>
+
+            <div>Which features did you find useful in the product <br>(Check all that apply)</div>
+
+            <label class="checkbox-form1">
+                Durability
+                <input type="checkbox" id="durability" name="features" value="durability">
+            </label>
+
+            <label class="checkbox-form1">
+                Ease of use
+                <input type="checkbox" id="ease" name="features" value="ease">
+            </label>
+
+            <label class="checkbox-form1">
+                Performance
+                <input type="checkbox" id="performance" name="features" value="performance">
+            </label>
+
+            <label class="checkbox-form1">
+                Design
+                <input type="checkbox" id="design" name="features" value="design">
+            </label>
+
+            <label for="written-review">Written Review</label>
+            <textarea name="written-review" id="written-review"></textarea>
+
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required>
+
+            <input type="submit" value="post-review">
+        </fieldset>
+    </form>
+    </div>
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear"></span> 🎮 Thailis Gonzalez 🎮 Chile
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
