@@ -1,4 +1,3 @@
-console.log("review recharged");
 let numberReviews = Number(localStorage.getItem("numberOfReviews")) || 0;
 
 numberReviews++;

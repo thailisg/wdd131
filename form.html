@@ -22,84 +22,84 @@
         <h1>Product Review</h1>
     </header>
     <main>
-    <div class="container-form">   
-    <form method="get" action="review.html" class="form1">
 
-        <fieldset>
+        <div class="container-form">   
+            <form method="get" action="review.html" class="form1">
 
-            <label for="product-name">Product Name</label>
+                <fieldset>
 
-            <select name="product-name" id="product-name" required>
-                <option value="" disabled selected>Choose a product</option>
+                    <label for="product-name">Product Name</label>
 
-            </select>
+                    <select name="product-name" id="product-name" required>
+                        <option value="" disabled selected>Select a product ...</option>
+                    </select>
 
-            <label>Overall Rating</label>
-            <div class="stars">
+                    <label>Overall Rating</label>
+                    <div class="stars">
 	            
-                <label class="star-option">
-                    &star;
-                    <input id="onestar" type="radio" name="rating" value="1" required>  
-                </label>
+                        <div class="star-item">
+                            <label for="onestar" class="star-option">&star;</label>
+                            <input id="onestar" type="radio" name="rating" value="1" required>
+                        </div>
 
-                <label class="star-option">
-                    &star;&star;
-                    <input id="twostar" type="radio" name="rating" value="2" required>    
-                </label>
+                        <div class="star-item">
+                            <label for="twostar" class="star-option">&star;&star;</label>
+                            <input id="twostar" type="radio" name="rating" value="2" required>
+                        </div>
 
-                <label class="star-option">
-                    &star;&star;&star;
-                    <input id="threestar" type="radio" name="rating" value="3" required>
-                </label>
+                        <div class="star-item">
+                            <label for="threestar" class="star-option">&star;&star;&star;</label>
+                            <input id="threestar" type="radio" name="rating" value="3" required>
+                        </div>
 
-                <label class="star-option">
-                    &star;&star;&star;&star;
-                    <input id="fourstar" type="radio" name="rating" value="4" required>
-                </label>
+                        <div class="star-item">
+                            <label for="fourstar" class="star-option">&star;&star;&star;&star;</label>
+                            <input id="fourstar" type="radio" name="rating" value="4" required>
+                        </div>
 
-                <label class="star-option">
-                    &star;&star;&star;&star;&star;
-                    <input id="fivestar" type="radio" name="rating" value="5" required>
-                </label>
+                        <div class="star-item">
+                            <label for="fivestar" class="star-option">&star;&star;&star;&star;&star;</label>
+                            <input id="fivestar" type="radio" name="rating" value="5" required>
+                        </div>
 
-            </div>
+                    </div>
             
 
-            <label for="date">Date of Installation</label>
-            <input type="date" name="date" id="date" required>
+                    <label for="date">Date of Installation</label>
+                    <input type="date" name="date" id="date" required>
 
-            <div>Which features did you find useful in the product <br>(Check all that apply)</div>
+                    <div>Which features did you find useful in the product <br>(Check all that apply)</div>
 
-            <label class="checkbox-form1">
-                Durability
-                <input type="checkbox" id="durability" name="features" value="durability">
-            </label>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="durability" name="features" value="durability">
+                        <label for="durability" class="checkbox-form1">Durability</label>
+                    </div>
 
-            <label class="checkbox-form1">
-                Ease of use
-                <input type="checkbox" id="ease" name="features" value="ease">
-            </label>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="ease" name="features" value="ease">
+                        <label for="ease" class="checkbox-form1">Ease of use</label>
+                    </div>
 
-            <label class="checkbox-form1">
-                Performance
-                <input type="checkbox" id="performance" name="features" value="performance">
-            </label>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="performance" name="features" value="performance">
+                        <label for="performance" class="checkbox-form1">Performance</label>
+                    </div>
 
-            <label class="checkbox-form1">
-                Design
-                <input type="checkbox" id="design" name="features" value="design">
-            </label>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="design" name="features" value="design">
+                        <label for="design" class="checkbox-form1">Design</label>
+                    </div>
 
-            <label for="written-review">Written Review</label>
-            <textarea name="written-review" id="written-review"></textarea>
+                    <label for="written-review">Written Review</label>
+                    <textarea name="written-review" id="written-review"></textarea>
 
-            <label for="name">Your name</label>
-            <input type="text" id="name" name="name" required>
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" required>
 
-            <input type="submit" value="post-review">
-        </fieldset>
-    </form>
-    </div>
+                    <input type="submit" value="post-review">
+                </fieldset>
+            </form>
+        </div>
     </main>
     <footer>
         <p>

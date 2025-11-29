@@ -4,12 +4,17 @@
     --principal-color: #dfccf7;
     --secundary-color: #523080;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 *{
     margin: 0;
     padding: 0;
     font-family: "Crimson Text", serif;
     font-size: 1rem ;
 }
+
 
 header, footer{
     text-align: center;
@@ -24,11 +29,17 @@ main {
     align-items: center;
 }
 
+.container-form,
+.form1 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+}
+
 .container-form{
-    width: 90%;
+
     max-width: 350px;
     min-height: 60vh;
-    padding: 1rem;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     display: flex;
@@ -39,12 +50,16 @@ main {
 }
 
 .form1{
+
     background-color: var(--principal-color);
+    border-radius: 12px;
 }
 
 fieldset{
+    width: 100%;
     padding: 1rem 0.5rem;
     border-radius: 6px;
+    border: none;
 }
 
 label{
@@ -68,10 +83,18 @@ textarea {
 
 .stars {
     display: flex;
-    gap: 20px;
-    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
     justify-content: center;
 }
+
+.star-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
 
 .star-option {
 
@@ -83,17 +106,16 @@ textarea {
     line-height: 1;
 }
 
-.checkbox{
+.checkbox-item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    margin: 0.5rem 0;
+    gap: 0.5rem;
+    margin: 0.3rem 0;
 }
 
 input[type ="checkbox"]{
 
-    margin-left: 1rem;
+    margin-right: 0.5rem;
 }
 
 
@@ -113,4 +135,5 @@ input[type="submit"]{
     box-sizing: border-box;
     padding: 0.5rem;
     border-radius: 6px;
+    cursor: pointer;
 }
