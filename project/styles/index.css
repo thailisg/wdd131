@@ -88,6 +88,7 @@ h1{
     top: 100%;
     right: 1rem;
     z-index: 100;
+    border: 1px solid var(--color-brown-dark);
 }
 
 .navigation.active {
@@ -126,4 +127,24 @@ section h2{
 
 section p{
     padding: .4rem;
+    text-align: left;
+}
+
+/*----------img of principle characters---------*/
+
+.img-main-character {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main-character {
+    width: 45%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid var(--color-brown-dark);
 }
