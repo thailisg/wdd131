@@ -1,0 +1,129 @@
+:root {
+    --color-brown-ground: #7b4f2a;
+    --color-brown-dark: #4a2e17;
+    --color-grey-stone: #6a6a6a;
+    --color-green-grass: #2d5d1f;
+    --color-purple-antagonist: #6B3FA0;
+    --color-purpleblue-cristal: #7C6BCB;
+    --text-light: #fff;
+    --text-dark: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cinzel", serif;
+}
+
+body{
+    background-color: var(--color-green-grass);
+}
+
+/*----------Header, footer and section: general configuration---------*/
+
+header, footer, section{
+    color: var(--text-light);
+    padding: 0.7rem 1.5rem;
+    text-shadow: 0 0 5px #000;
+    border-top: 5px solid #333;
+    border-bottom: 5px solid #333;
+}
+
+header, footer{
+    text-align: center;
+    background-color: var(--color-grey-stone);
+}
+
+/*--------------------------------Header--------------------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+/*----------Logo and title---------*/
+.logo-title{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+/*----------Logo container---------*/
+.logo{
+    width: 90px;
+    height: auto;
+}
+
+/*----------Title---------*/
+h1{
+    font-size: 1.3rem;
+}
+
+/*----------Mobile menu toggle---------*/
+#menu-toggle {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/*----------Navigation part---------*/
+.navigation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--color-grey-stone);
+    padding: 1rem;
+    border-radius: 8px;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    z-index: 100;
+}
+
+.navigation.active {
+  display: flex;
+}
+
+/*----------list of navigation---------*/
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+/*--------------------------------Main--------------------------------*/
+
+section{
+    background-color: var(--color-brown-ground);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+section p{
+    padding: .4rem;
+}
