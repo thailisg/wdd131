@@ -7,3 +7,4 @@ document.addEventListener('DOMContentLoaded', () => {
         menuButton.textContent = navigation.classList.contains('active') ? '✖' : '☰';
     });
 });
+

@@ -2,7 +2,7 @@
     --color-brown-ground: #7b4f2a;
     --color-brown-dark: #4a2e17;
     --color-grey-stone: #6a6a6a;
-    --color-green-grass: #2d5d1f;
+    --color-green-grass: #2d5d1fdc;
     --color-purple-antagonist: #6B3FA0;
     --color-purpleblue-cristal: #7C6BCB;
     --text-light: #fff;
@@ -18,6 +18,30 @@
 
 body{
     background-color: var(--color-green-grass);
+}
+
+/*----------configurations to prevent code breakage with the desktop carousel---------*/
+
+aside{
+    display: none;
+}
+
+.carousel-container{
+    width: 100%;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.slide{
+    display: block;
+}
+
+.slide section {
+    width: 100%;
+}
+
+.carousel-btn{
+    display: none;
 }
 
 /*----------Header, footer and section: general configuration---------*/
