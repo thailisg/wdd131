@@ -20,7 +20,7 @@ body{
     background-color: var(--color-green-grass);
 }
 
-/*----------configurations to prevent code breakage with the desktop carousel---------*/
+/*----------Configurations to prevent code breakage with the desktop carousel in index---------*/
 
 aside{
     display: none;
@@ -156,7 +156,7 @@ li {
     cursor: pointer;
 }
 
-/*--------------------------------Main--------------------------------*/
+/*--------------------------------Main for Index.html--------------------------------*/
 
 section{
     background-color: var(--color-brown-ground);
