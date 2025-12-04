@@ -1,33 +1,6 @@
 @media screen and (min-width: 1280px){ 
 
-    /*--------Header--------*/
-    .logo{
-        width: 10vw;
-    }
-
-    #menu-toggle{
-        display: none;
-    }
-
-    .navigation{
-        display: flex;
-        background-image: none;
-        position: static;
-        width: auto;
-    }
-
-    .menu{
-        flex-direction: row;
-        gap: 1rem;
-        justify-content: center;
-    }
-
-    .menu-item a{
-        color: var(--text-light);
-    }
-
     /*--------Main--------*/
-
     main{
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
@@ -63,12 +36,10 @@
         flex-wrap: nowrap;
         transition: transform 0.5s ease;
         width: auto;
-        height: 100%;
     }
 
     .slide section {
         flex: 0 0 100%;
-        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
