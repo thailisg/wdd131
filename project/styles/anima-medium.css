@@ -25,4 +25,36 @@
         color: var(--text-light);
     }
 
+    /*--------img for maps.hmtl--------*/
+
+    .container-img {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 900px;
+        margin: 2rem auto;
+    }
+
+        .container-img figure {
+        max-width: 350px;
+    }
+
+    /*--------img for characters.hmtl--------*/
+
+    .container-character {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .flip-card {
+        width: 400px;
+        height: 400px;
+    }
+
+    .flip-front h3 {
+        font-size: 1.4rem;
+    }
+
+    .flip-front p {
+        font-size: 1rem;
+    }
 }

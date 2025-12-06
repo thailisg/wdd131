@@ -18,6 +18,9 @@
 
 body{
     background-color: var(--color-green-grass);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
 
 /*----------Configurations to prevent code breakage with the desktop carousel in index---------*/
@@ -208,4 +211,174 @@ section p{
     height: auto;
     border-radius: 6px;
     border: 1px solid var(--color-brown-dark);
+}
+
+/*--------------------------------Main for Maps.html--------------------------------*/
+
+.maps-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px); 
+}
+
+.maps-h2{
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--text-light);
+    font-weight: 700;
+    text-shadow: 0 0 5px #000;
+}
+
+.container-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    text-align: center;
+    margin: 1rem;
+}
+
+.container-img figure {
+    width: 90%;
+    max-width: 320px;
+    background-color: var(--color-brown-ground);
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.container-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.container-img figcaption {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.container-img img.map-img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.container-img img.map-img:hover {
+    transform: scale(1.08);
+}
+
+/*----------modal for map---------*/
+.map-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+/*--------------------------------Main characters.html--------------------------------*/
+
+.characters-h2{
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--text-light);
+    font-weight: 700;
+    text-shadow: 0 0 5px #000;
+}
+
+.container-character {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+    justify-items: center;
+}
+
+.flip-card {
+    width: 260px;
+    height: 260px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.flip-card.flip-active .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--color-brown-dark);
+    border-radius: 12px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.45);
+}
+
+.flip-front {
+    background: var(--color-brown-ground);
+    padding: 1rem;
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flip-front h3 {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.flip-back {
+    background: #000;
+    transform: rotateY(180deg);
+}
+
+.flip-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-card.villain .flip-front {
+    background: var(--color-purple-antagonist);
+}
+
+.flip-card.villain .flip-back {
+    border-color: var(--color-purple-antagonist);
 }
