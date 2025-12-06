@@ -86,7 +86,7 @@ const characters = [
   {
     name: "The dough",
     age: "???",
-    description: "We know little about her; she appears to destroy and corrupt everything in her path, but perhaps she is not as simple as she seems.",
+    description: "We know little about her; it appears to destroy and corrupt everything in her path, but perhaps it is not as simple as she seems.",
     imageUrl:
     "images/villain-complete.webp"
   }
