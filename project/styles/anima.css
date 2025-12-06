@@ -240,6 +240,12 @@ section p{
     margin: 1rem;
 }
 
+.map-credits{
+    text-align: center;
+    text-shadow: 0 0 5px #000;
+    color: var(--text-light);
+}
+
 .container-img figure {
     width: 90%;
     max-width: 320px;
