@@ -1,3 +1,4 @@
+//Script to control the responsive navigation menu
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.querySelector('#menu-toggle');
     const navigation = document.querySelector('.navigation');
@@ -7,4 +8,5 @@ document.addEventListener('DOMContentLoaded', () => {
         menuButton.textContent = navigation.classList.contains('active') ? '✖' : '☰';
     });
 });
+
 

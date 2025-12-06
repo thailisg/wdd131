@@ -40,14 +40,14 @@
     /*--------img for characters.hmtl--------*/
 
     .container-character {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         padding: 2rem;
         gap: 2rem;
     }
 
     .flip-card {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
     }
 
     .flip-front h3 {
@@ -56,5 +56,21 @@
 
     .flip-front p {
         font-size: 1rem;
+    }
+
+    /*--------form contact.hmtl--------*/
+
+    label {
+        font-size: 1.1rem;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 1.05rem;
+    }
+
+    .container-form {
+        max-width: 550px;
     }
 }

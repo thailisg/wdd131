@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Thailis Gonzalez">
-    <meta name="description" content="page to show and describe places in the book 'Anima Umbrae'">
+    <meta name="description" content="Contact page to make book recommendations for the book 'Anima Umbrae'">
 
     <link rel="stylesheet" href="styles/anima.css">
     <link rel="stylesheet" href="styles/anima-medium.css">
@@ -13,10 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
-    <title>Maps in Anima Umbrae - Thailis Gonzalez </title>
+    <title>Contact - Thailis Gonzalez </title>
     
     <script src="scripts/index.js" defer></script>
-    <script src="scripts/characters.js" defer></script>
+    <script src="scripts/form.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
@@ -39,12 +39,40 @@
             </ul>
         </nav>
     </header>
-    <main class="characters-main">
-        <h2 class="characters-h2">Characters</h2>
-        <div class="container-character">
-        </div>
+    <!----------Main--------->
+    <main>
+        <!----------Form--------->
+        <section class="section-contact">
+            <div class="container-form">
+                <form method="post" action="#" class="form1" id="contactForm">
+                    <fieldset>
+
+                        <label for="user-name">Your Name</label>
+                        <input type="text" id="user-name" name="user-name" required>
+
+                        <label for="user-email">Your Email</label>
+                        <input type="email" id="user-email" name="user-email" required>
+
+                        <label for="reason">Reason of Contact</label>
+                        <select name="reason" id="reason" required>
+                            <option value="" disabled selected>Select a reason...</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="questions">Questions</option>
+                            <option value="recomend">Recomendations</option>
+                        </select>
+
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <input type="submit" value="Send Message">
+                    </fieldset>
+                </form>
+
+                <p id="formMessage" class="form-message"></p>
+            </div>
+        </section>
     </main>
-    <!------Footer------->
+    <!-------Footer------->
     <footer>
         <p>
             <span id="currentyear"></span> 🎮 Thailis Gonzalez 🎮 Chile
